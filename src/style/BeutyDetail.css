@@ -1,0 +1,323 @@
+/* Reviews Section Styles */
+.reviews-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.reviews-section h2 {
+  color: #364f6b;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.reviews-list {
+  margin-bottom: 2rem;
+}
+
+.review-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.review-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.review-text {
+  color: #333;
+  line-height: 1.5;
+}
+
+.no-reviews {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.review-form {
+  margin-top: 2rem;
+}
+
+.review-input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-family: inherit;
+}
+
+.submit-review-btn {
+  background: #3f72af;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-review-btn:hover {
+  background: #364f6b;
+}
+/* BeutyDetail.css */
+.product-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #3f72af;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.product-main {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.product-gallery {
+  flex: 1;
+}
+
+.main-image {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f8f8f8;
+  margin-bottom: 1rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-title {
+  font-size: 2rem;
+  color: #364f6b;
+  margin-bottom: 1rem;
+}
+
+.product-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.current-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fc5185;
+}
+
+.discount-badge {
+  background: #ffeb3b;
+  color: #333;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.product-description {
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.stock-info {
+  margin-bottom: 2rem;
+}
+
+.in-stock {
+  color: #4CAF50;
+  font-weight: 500;
+}
+
+.out-of-stock {
+  color: #f44336;
+  font-weight: 500;
+}
+
+.add-to-cart-btn {
+  background: #3f72af;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background: #364f6b;
+}
+
+.add-to-cart-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.product-specs {
+  background: #f8f8f8;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.product-specs h2 {
+  color: #364f6b;
+  margin-bottom: 1rem;
+}
+
+.product-specs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-specs li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .product-main {
+    flex-direction: column;
+  }
+  
+  .main-image {
+    height: 300px;
+  }
+}
+
+.loading, .error, .not-found {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #f44336;
+}
+
+/* Reviews Section Styles */
+.reviews-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.reviews-section h2 {
+  color: #364f6b;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.reviews-section h3 {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.reviews-list {
+  margin-bottom: 2rem;
+}
+
+.review-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.review-author {
+  font-weight: 600;
+  color: #3f72af;
+}
+
+.review-date {
+  color: #888;
+}
+
+.review-body {
+  margin-top: 0.5rem;
+}
+
+.review-text {
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.no-reviews {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 6px;
+}
+
+/* Rest of your existing styles... */

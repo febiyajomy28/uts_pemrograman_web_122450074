@@ -1,0 +1,197 @@
+/* Wrapper untuk menampung link dan kartu */
+.card-wrapper {
+  background-color: pink; /* Set the background of the link/container to pink */
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; /* Ensure it takes full width */
+}
+
+/* Wrapper untuk menampung kartu */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  gap: 1cm; /* Set gap between the cards */
+  max-width: 80%; /* Limit the width of the container */
+  padding: 20px;
+  position: relative;
+}
+
+/* Styling dasar untuk kartu */
+.recipe-card {
+  background: #fff; /* Set background of the card to white */
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto; /* Center the card */
+  position: relative;
+  z-index: 1; /* Keeps the card on top by default */
+}
+
+/* Efek memanjang ke belakang (3D effect) */
+.recipe-card:nth-child(2) {
+  transform: translateY(20px); /* Move the card slightly down */
+  z-index: 0; /* Send the second card behind the first */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow for depth */
+}
+
+.recipe-card:nth-child(3) {
+  transform: translateY(40px); /* Move the card slightly further down */
+  z-index: -1; /* Send the third card even further behind */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add more shadow for depth */
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Gambar */
+.recipe-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block; /* Remove default inline behavior */
+  margin: 0 auto; /* Center the image */
+}
+
+/* Judul */
+.recipe-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #364f6b;
+  margin-top: 10px;
+}
+
+/* Kategori */
+.recipe-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Harga */
+.recipe-card p:nth-child(4) {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fc5185;
+}
+
+/* Rating dan stok */
+.recipe-card p:last-child {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3f72af;
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr; /* 2 columns on smaller screens */
+  }
+
+  .recipe-card {
+    max-width: 100%;
+  }
+
+  .recipe-card img {
+    height: 140px;
+  }
+
+  .recipe-card h3 {
+    font-size: 16px;
+  }
+}
+
+
+
+/* Style untuk container utama */
+.beauty-list-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Judul halaman */
+.beauty-list-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Grid produk */
+.beauty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Kartu produk */
+.beauty-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beauty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Gambar produk */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Info produk */
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.product-category {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  font-size: 1.3rem;
+  color: #e74c3c;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  color: #f39c12;
+  margin-bottom: 0.5rem;
+}
+
+.product-stock {
+  font-size: 0.9rem;
+  color: #27ae60;
+  font-weight: 500;
+}

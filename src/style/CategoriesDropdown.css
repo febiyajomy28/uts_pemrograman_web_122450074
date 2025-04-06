@@ -1,0 +1,87 @@
+/* Styling dasar dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  padding: 15px 25px;
+  background: #364f6b;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+}
+
+.dropdown-button:hover {
+  background: #3f72af;
+}
+
+/* Styling dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Tombol kategori mengikuti referensi */
+a.tbl-biru,
+a.tbl-pink {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 80%;
+  padding: 12px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+a.tbl-biru {
+  background: #3f72af;
+  color: white;
+}
+
+a.tbl-biru:hover {
+  background: #fc5185;
+}
+
+a.tbl-pink {
+  background: #fc5185;
+  color: white;
+}
+
+a.tbl-pink:hover {
+  background: #3f72af;
+}
+
+/* Responsive */
+@media screen and (max-width: 991.98px) {
+  .dropdown-menu {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+}
